@@ -62,19 +62,26 @@ def menu ():
         print("3. Total de Tareas")
         print("4. Salir")
 
+        #Se solicita la opción que desea
         opc=int(input("Digite una opción: "))
 
+        # Si la opción es 1 se piden los datos de la tarea y se llama al metodo agregar
         if opc == 1:
             nom = input("Ingrese el nombre de la tarea que desea agregar: ")
             mat = input("Ingrese la materia a la cuál pertenece la tarea: ")
             porc = input("Ingrese porcentaje que vale la tarea: ")
             agregar(nom, mat, porc)
 
+        # Si la opción es 2 se pide el nombre de la materia y se llama al metodo consultar materia
         elif opc == 2:
             mat = input("Ingrese el nombre de la materia que desea consultar: ")
             consultarMateria(mat)
+        
+        # Si la opción es 3, se muestra la cantidad de tareas que hay en la lista
         elif opc == 3:
             CantidadTareas()
+
+        # Y finalmente 4 si se desea salir para finalizar el ciclo y cerrar el menú
         else:
             print("Salir")
             salir= True
