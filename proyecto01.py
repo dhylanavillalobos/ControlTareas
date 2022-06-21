@@ -51,7 +51,10 @@ def menu ():
 
     # se ejecuta el menu mientras la opción no sea salir
     while not salir:
+        # Limpia la pantalla antes de mostrar el menú
         os.system('cls')
+        
+        # Muestra el Menú y las opciones
         print("       Menú     ")
         print("****************")
         print("1. Agregar Tarea")
