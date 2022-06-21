@@ -47,7 +47,7 @@ def salir ():
 def menu ():
     salir = False
 
-    # se ejecuta el menu mientras la opcion no sea salir
+    # se ejecuta el menu mientras la opción no sea salir
     while not salir:
         print("       Menú     ")
         print("****************")
@@ -56,7 +56,7 @@ def menu ():
         print("3. Total de Tareas")
         print("4. Salir")
 
-        opc=int(input("Digite una opcion: "))
+        opc=int(input("Digite una opción: "))
 
         if opc == 1:
             nom = input("Ingrese el nombre de la tarea que desea agregar: ")
