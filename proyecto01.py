@@ -1,3 +1,5 @@
+import os
+
 # Lista para almacenar las tareas
 global lista
 lista = list()
@@ -49,6 +51,7 @@ def menu ():
 
     # se ejecuta el menu mientras la opción no sea salir
     while not salir:
+        os.system('cls')
         print("       Menú     ")
         print("****************")
         print("1. Agregar Tarea")
